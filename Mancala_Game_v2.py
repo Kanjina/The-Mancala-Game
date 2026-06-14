@@ -75,6 +75,7 @@ def print_assistance(arguement):
         print("This will lock the board to Player A's perspective")
         print('To start flipping the board, type in "flip"')
         print('To stop seeing this message, type in "stop" during your turn.')
+        print("(You can always turn these reminders back on)")
     else:
         print('Type in "check" to see the reminders again!')
 
@@ -450,7 +451,7 @@ while Code_Running:
 
     #This prints the result of the game.
     if chosen_move != 32767 and chosen_move != 255:
-        print(calculate_winner(board, Score_A, Score_B))
+        print(calculate_winner())
 
     game_reset = reset_game()
     #If reset_game(board) returns halt, the full loop will be exited.
