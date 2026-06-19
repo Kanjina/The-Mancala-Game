@@ -376,7 +376,7 @@ def calculate_winner():
             Score_A += 1
             return PAW + f" Player A has {Score_A} points. Player B has {Score_B} points."
         elif PBSC > PASC:
-            Player_B_Score += 1
+            Score_B += 1
             return PBW + f" Player A has {Score_A} points. Player B has {Score_B} points."
         else:
             return DRAW + f" Player A has {Score_A} points. Player B has {Score_B} points."
